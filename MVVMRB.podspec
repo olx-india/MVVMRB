@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MVVMRB'
-  s.version          = '0.2.5'
+  s.version          = '1.0.0'
   s.summary          = 'MVVM+RB - Adaption of the MVVM design pattern in a better way.'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/olxgroup-oss/MVVMRB.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'MVVMRB/Classes/**/*'
 
