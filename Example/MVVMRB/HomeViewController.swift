@@ -11,10 +11,12 @@ import UIKit
 class HomeViewController: UIViewController {
 
     private var listBuilder: ListBuilder?
+    private var newListBuilder: NewListBuilder?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         listBuilder = ListBuilder(dependency: ListDependency(data: getListData()))
+        newListBuilder = NewListBuilder(dependency: NewListDependency(data: getListData()))
     }
 
     private func getListData() -> [String] {
@@ -32,6 +34,12 @@ class HomeViewController: UIViewController {
     
     @IBAction func showListAction(_ sender: Any) {
         if let viewController: UIViewController = listBuilder?.build() as? UIViewController {
+            navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+    
+    @IBAction func showNewListAction(_ sender: Any) {
+        if let viewController: UIViewController = newListBuilder?.build() as? UIViewController {
             navigationController?.pushViewController(viewController, animated: true)
         }
     }

@@ -1,22 +1,24 @@
 {
   "name": "MVVMRB",
-  "version": "0.1.0",
-  "summary": "A short description of MVVMRB.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/parmodjakhar1996@gmail.com/MVVMRB",
+  "version": "1.0.0",
+  "summary": "MVVM+RB - Adaption of the MVVM design pattern in a better way.",
+  "description": "MVVM+RB is a design pattern framework.",
+  "homepage": "https://www.olx.in/",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "parmodjakhar1996@gmail.com": "parmod.jhakar@olx.com"
+    "Parmod Jakhar": "parmod.jhakar@olx.com"
   },
   "source": {
-    "git": "https://github.com/parmodjakhar1996@gmail.com/MVVMRB.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/olx-india/MVVMRB",
+    "tag": "1.0.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "15.0"
   },
-  "source_files": "MVVMRB/Classes/**/*"
+  "source_files": "MVVMRB/Classes/**/*",
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
 }

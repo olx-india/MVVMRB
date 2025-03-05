@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CB4BCAA2D789DA300848A28 /* NewListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4BCA52D789DA300848A28 /* NewListBuilder.swift */; };
+		1CB4BCAB2D789DA300848A28 /* NewListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4BCA72D789DA300848A28 /* NewListRouter.swift */; };
+		1CB4BCAC2D789DA300848A28 /* NewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4BCA82D789DA300848A28 /* NewListViewController.swift */; };
+		1CB4BCAD2D789DA300848A28 /* NewListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4BCA92D789DA300848A28 /* NewListViewModel.swift */; };
+		1CB4BCAE2D789DA300848A28 /* NewListDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4BCA62D789DA300848A28 /* NewListDependency.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* HomeViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CB4BCA52D789DA300848A28 /* NewListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListBuilder.swift; sourceTree = "<group>"; };
+		1CB4BCA62D789DA300848A28 /* NewListDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListDependency.swift; sourceTree = "<group>"; };
+		1CB4BCA72D789DA300848A28 /* NewListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListRouter.swift; sourceTree = "<group>"; };
+		1CB4BCA82D789DA300848A28 /* NewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListViewController.swift; sourceTree = "<group>"; };
+		1CB4BCA92D789DA300848A28 /* NewListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListViewModel.swift; sourceTree = "<group>"; };
 		20303798BF31759319EA09B3 /* Pods-MVVMRB_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRB_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMRB_Tests/Pods-MVVMRB_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		38ECAF4BB403F2575D48C511 /* Pods_MVVMRB_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMRB_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F09166075B8B8D44CA06E99 /* Pods-MVVMRB_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRB_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMRB_Tests/Pods-MVVMRB_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +91,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CB4BCA42D789D8C00848A28 /* NewList */ = {
+			isa = PBXGroup;
+			children = (
+				1CB4BCA52D789DA300848A28 /* NewListBuilder.swift */,
+				1CB4BCA62D789DA300848A28 /* NewListDependency.swift */,
+				1CB4BCA72D789DA300848A28 /* NewListRouter.swift */,
+				1CB4BCA82D789DA300848A28 /* NewListViewController.swift */,
+				1CB4BCA92D789DA300848A28 /* NewListViewModel.swift */,
+			);
+			path = NewList;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +127,7 @@
 		607FACD21AFB9204008FA782 /* Example for MVVMRB */ = {
 			isa = PBXGroup;
 			children = (
+				1CB4BCA42D789D8C00848A28 /* NewList */,
 				607FACD71AFB9204008FA782 /* HomeViewController.swift */,
 				AB8C814324DB9E0000F89457 /* List Screen */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -294,21 +317,17 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MVVMRB_Example/Pods-MVVMRB_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MVVMRB_Example/Pods-MVVMRB_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MVVMRB/MVVMRB.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MVVMRB.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVVMRB_Example/Pods-MVVMRB_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVMRB_Example/Pods-MVVMRB_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		871B0C07A5130D387CA13667 /* [CP] Check Pods Manifest.lock */ = {
@@ -368,6 +387,11 @@
 				607FACD81AFB9204008FA782 /* HomeViewController.swift in Sources */,
 				AB8C815E24DBA11C00F89457 /* ListViewController.swift in Sources */,
 				AB8C816324DBAE7200F89457 /* ListDependency.swift in Sources */,
+				1CB4BCAA2D789DA300848A28 /* NewListBuilder.swift in Sources */,
+				1CB4BCAB2D789DA300848A28 /* NewListRouter.swift in Sources */,
+				1CB4BCAC2D789DA300848A28 /* NewListViewController.swift in Sources */,
+				1CB4BCAD2D789DA300848A28 /* NewListViewModel.swift in Sources */,
+				1CB4BCAE2D789DA300848A28 /* NewListDependency.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,7 +539,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MVVMRB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -532,7 +556,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MVVMRB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -556,6 +580,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -574,6 +599,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

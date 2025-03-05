@@ -27,7 +27,8 @@ open class ViewController<DependencyType, ViewModelType, RouterType>: UIViewCont
         self.router = router
         
         let nibIdentifier = String(describing: type(of: self))
-        if let bundle = bundle, bundle.path(forResource: nibIdentifier, ofType: "nib") != nil {
+        
+        if bundle?.path(forResource: nibIdentifier, ofType: "nib") != nil {
             super.init(nibName: nibIdentifier, bundle: bundle)  // ✅ Available nib in passed bundle, using xib
         } else {
             super.init(nibName: nil, bundle: nil)  // ✅ No nib found, use programmatic setup
