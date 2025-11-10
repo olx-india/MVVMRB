@@ -7,6 +7,7 @@
 //
 
 import MVVMRB
+import UIKit
 
 protocol NewListViewControllerDependencyProtocol {
 }

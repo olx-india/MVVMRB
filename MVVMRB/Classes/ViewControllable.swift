@@ -6,6 +6,8 @@
 // See https://git.naspersclassifieds.com/infrastructure/strategy_team/olxgroup-oss/-/blob/master/projects/mvvm-rb-ios/metadata.md for the list of Swift project authors
 //
 
+import Foundation
+
 /// Basic interface between a `Router` and the UIKit `UIViewController`.
 public protocol ViewControllable {
     associatedtype DependencyType
