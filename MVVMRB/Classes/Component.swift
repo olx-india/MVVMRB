@@ -19,7 +19,7 @@ open class Component<DependencyType>: Dependency {
         self.dependency = dependency
     }
 
-    final func shared<SingletonType: Any>(singleton: () -> SingletonType) -> SingletonType {
+    public final func shared<SingletonType: Any>(singleton: () -> SingletonType) -> SingletonType {
         let key = ObjectIdentifier(SingletonType.self)
         if let object = _singletons[key] as? SingletonType {
             return object

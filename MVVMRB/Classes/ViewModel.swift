@@ -6,6 +6,8 @@
 // See https://git.naspersclassifieds.com/infrastructure/strategy_team/olxgroup-oss/-/blob/master/projects/mvvm-rb-ios/metadata.md for the list of Swift project authors
 //
 
+import Foundation
+
 /// A `ViewModel` defines a unit of business logic that corresponds to a router unit.
 ///
 /// A `ViewModel` has a lifecycle driven by its owner router. When the corresponding router is attached to its
